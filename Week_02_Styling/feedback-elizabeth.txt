@@ -1,0 +1,38 @@
+Use HTML5 structural elements (nav, header, footer)
+  - Good!
+
+Use a CSS Reset file in addition to your style.css file to style the page
+  - You have the normalize file in the folder, but it's actually not working because you have it linked wrong in the HTML. (I can see why you wouldn't have noticed. The effects of normalize are pretty subtle.) This is an easy mistake to make, but luckily, it's also easy to fix. See how you are referencing the file as css/normalize.css:
+  <link rel="stylesheet" href="css/normalize.css">
+  The "css/" part means look in the folder named css. Which is a fine way to do it, except you don't have that file saved in a folder. Your normalize file is sitting right next to your HTML file. Which is also fine, you just need to mark it correctly, like this:
+  <link rel="stylesheet" href="normalize.css">
+  You have your other files linked correctly, so I'm thinking this was just a mistake, but let me know if you have any questions about linking files.
+
+Use IDs and Classes to select and style elements on the page
+  - Good!
+
+Follow naming conventions, maintain consistency across .html and .css files and use best practices for naming IDs and Classes
+  - Good!
+
+Indent nested elements to increase your code's readability
+  - Good!
+
+Use CSS display and float to get the layout correct
+  - Good!
+
+
+Additional Comments:
+
+This is looking really good.
+
+Nice job on the CSS background images! Those look good, and you're using them correctly/in the correct context. One little thing: you should put quotes around the url. It's still working because modern browsers are smart and help you out, but it's better to have the quotes:
+background: url("testimonial_bg.jpg");
+For CSS images, instead of using background-size: 100%, I like to use:
+background-size: cover;
+Try resizing the browser with the two different ones and see what it does. Cover adjusts/crops the photo so that your div is always completely covered by the picture.
+
+Nice job on organizing the code with divs!
+
+You have 3 Google Font links in your <head>. They aren't doing any harm, but you can just combine them all into one link with all the fonts together.
+
+Overall, nice job. Let me know if you have any questions.
