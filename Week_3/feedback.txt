@@ -1,0 +1,22 @@
+Use floats or inline-block in your CSS to achieve a two-column layout
+ - Good, but you could have applied the "float: left" styling to your .maincontent class instead of the individual boxes, that would save you some typing and make the styles more maintainable
+Use the correct Open Sans Google Font typeface to style the text denoted in the design file and according to the JPEG provided
+ - Good!
+Use proper filename conventions (lowercase, .html)
+ - Good!
+Use an external CSS stylesheet to style your page
+ - Good!
+Make sure that all images are no wider than their containers
+ - Good!
+Add a hover effect to all the links using pseudo-classes
+ - You missed this one. You can use the 'hover' psuedo class (e.g. "a:hover { ... }") to create styles that only apply when a user puts the cursor over an element. This is useful for changing the color of a link when the user mouses over it.
+Integrate drop caps using pseudo-classes
+ - Good!
+
+Additional Comments:
+
+ - You have some styles that aren't used and some classes that are styled multiple times (e.g. box2). Keeping your CSS files tidy can help you more easily spot style issues.
+
+ - Try to keep your class and ID naming consistent, I see you have a box with a class of 'boxone' and another with a class of 'box2'. You could have achieved the styling you were going for with a single 'box' class.
+
+ - You have some overlapping elements because your 'boxone' is floated to the left, but your 'box2' is not. One way to resolve this would be to have the parent div, '.maincontent' floated to the left and not worry about floating the boxes inside.
