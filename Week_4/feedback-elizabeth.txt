@@ -1,0 +1,8 @@
+Elizabeth, your code is really close to working. The "Learn More" part is working fine. Nice! The Read More and Read Less parts aren't working, but only because you forgot to put the event.preventDefault() line on them. (See how when you click on Read More, it jumps to the top of the screen? That's the default browser behavior.) You have that code on line 3, but it's only applying to the Learn More section. So you could either add that line under each click event, or you could change line 2 so that that code applies to all the <a>s, and not just the Learn More section:
+
+  jQuery("a").on("click", function(event) {
+      event.preventDefault();
+  })
+
+
+  And now it works!
